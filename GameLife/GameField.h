@@ -6,9 +6,9 @@ using namespace System::Drawing;
 ref class GameField: public GameModel
 {
 	Object^ lock = gcnew Object();
-	Graphics^ mainG;//Основной (видимый) холст
-	Graphics^ g; //Холст в памяти
-	BufferedGraphics^ bg;//буфер
+	Graphics^ mainG;//РћСЃРЅРѕРІРЅРѕР№ (РІРёРґРёРјС‹Р№) С…РѕР»СЃС‚
+	Graphics^ g; //РҐРѕР»СЃС‚ РІ РїР°РјСЏС‚Рё
+	BufferedGraphics^ bg;//Р±СѓС„РµСЂ
 	int w, h;
 	void CreateDblBuff();
 	Point GetCell(int i, int j);
@@ -18,9 +18,9 @@ ref class GameField: public GameModel
 	Threading::Thread^ t;
 	value struct Box
 	{
-		int dx, dy; //Сдвиг поля от начала координат
-		int w, h; //Полезная ширина и высота поля
-		int wsz, hsz;// Ширина и высота клеток на поле
+		int dx, dy; //РЎРґРІРёРі РїРѕР»СЏ РѕС‚ РЅР°С‡Р°Р»Р° РєРѕРѕСЂРґРёРЅР°С‚
+		int w, h; //РџРѕР»РµР·РЅР°СЏ С€РёСЂРёРЅР° Рё РІС‹СЃРѕС‚Р° РїРѕР»СЏ
+		int wsz, hsz;// РЁРёСЂРёРЅР° Рё РІС‹СЃРѕС‚Р° РєР»РµС‚РѕРє РЅР° РїРѕР»Рµ
 		Box(int w, int h, int rows, int cols)
 		{
 			wsz = w / cols;
@@ -35,9 +35,9 @@ public:
 	int speed;
 	GameField(int w, int h, Graphics^ g);
 	GameField(int rows, int cols, int w, int h, Graphics^ g);
-	//Прорисовка текущего состояния игрового поля
+	//РџСЂРѕСЂРёСЃРѕРІРєР° С‚РµРєСѓС‰РµРіРѕ СЃРѕСЃС‚РѕСЏРЅРёСЏ РёРіСЂРѕРІРѕРіРѕ РїРѕР»СЏ
 	void Paint();
-	void ChangeState(int x, int y,Color c);//меняем цвет
+	void ChangeState(int x, int y,Color c);//РјРµРЅСЏРµРј С†РІРµС‚
 	void NextGeneration() override;
 	void StartLife();
 	void StopLife();

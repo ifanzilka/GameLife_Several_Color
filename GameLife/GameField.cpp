@@ -114,7 +114,7 @@ void GameField::NextGeneration()
 void GameField::StartLife()
 {
 	if (!started){
-		Threading::ThreadStart^ ts = //поток 
+		Threading::ThreadStart^ ts = //РїРѕС‚РѕРє 
 			gcnew Threading::ThreadStart(
 				this, 
 				&GameField::Start

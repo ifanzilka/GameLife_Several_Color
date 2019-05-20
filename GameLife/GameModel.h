@@ -3,17 +3,17 @@ using namespace System;
 using namespace System::Drawing;
 ref class GameModel
 {
-	//Количество клеток по ширине и высоте
-	int cols, rows;//размеры поля
-	//Массив статусов клеток
+	//РљРѕР»РёС‡РµСЃС‚РІРѕ РєР»РµС‚РѕРє РїРѕ С€РёСЂРёРЅРµ Рё РІС‹СЃРѕС‚Рµ
+	int cols, rows;//СЂР°Р·РјРµСЂС‹ РїРѕР»СЏ
+	//РњР°СЃСЃРёРІ СЃС‚Р°С‚СѓСЃРѕРІ РєР»РµС‚РѕРє
 	array<Color, 2>^ field;
-	Color dead = Color::Gray;//цвет мертвой клетки
+	Color dead = Color::Gray;//С†РІРµС‚ РјРµСЂС‚РІРѕР№ РєР»РµС‚РєРё
 	void RecreateArray();
-	void SetColor();//задать цвет всем элементам
-	Color ThreeColor(Color a, Color b, Color c);//слияние 3 цветов
-	Color TwoColor(Color a, Color b);//слияние 2 цветов
-	Color GetNextColor(int i, int j);//цвет на след урвоне
-	Color GetNeighbourStatus(int i, int j, int k);//цвет соседа k
+	void SetColor();//Р·Р°РґР°С‚СЊ С†РІРµС‚ РІСЃРµРј СЌР»РµРјРµРЅС‚Р°Рј
+	Color ThreeColor(Color a, Color b, Color c);//СЃР»РёСЏРЅРёРµ 3 С†РІРµС‚РѕРІ
+	Color TwoColor(Color a, Color b);//СЃР»РёСЏРЅРёРµ 2 С†РІРµС‚РѕРІ
+	Color GetNextColor(int i, int j);//С†РІРµС‚ РЅР° СЃР»РµРґ СѓСЂРІРѕРЅРµ
+	Color GetNeighbourStatus(int i, int j, int k);//С†РІРµС‚ СЃРѕСЃРµРґР° k
 	int GetAliveNeighbourCount(int i, int j);
 public:
 	virtual void NextGeneration();

@@ -6,7 +6,7 @@ void GameModel::RecreateArray()
 
 	
 }
-void GameModel::SetColor() //задает цвет всем элементам
+void GameModel::SetColor() //Р·Р°РґР°РµС‚ С†РІРµС‚ РІСЃРµРј СЌР»РµРјРµРЅС‚Р°Рј
 {
 	
 	for (int i = 0; i < this->Rows; i++) {
@@ -17,31 +17,31 @@ void GameModel::SetColor() //задает цвет всем элементам
 	}
 
 }
-Color GameModel::ThreeColor(Color a, Color b, Color c)//слияние 3 цветов
+Color GameModel::ThreeColor(Color a, Color b, Color c)//СЃР»РёСЏРЅРёРµ 3 С†РІРµС‚РѕРІ
 {
 	int alph = (a.A + b.A + c.A) / 3;
 	int blue = (a.B+b.B+c.B)/3;
 	int red = (a.R + b.R + c.R) / 3;
 	int green = (a.G + b.G + c.G) / 3;
-	Color color = Color::FromArgb(alph,red, green, blue);//цвет образуется от трех параметров зеленый красныйй синий ,значения от 0-255 это интенсивность каждого из цветов
+	Color color = Color::FromArgb(alph,red, green, blue);//С†РІРµС‚ РѕР±СЂР°Р·СѓРµС‚СЃСЏ РѕС‚ С‚СЂРµС… РїР°СЂР°РјРµС‚СЂРѕРІ Р·РµР»РµРЅС‹Р№ РєСЂР°СЃРЅС‹Р№Р№ СЃРёРЅРёР№ ,Р·РЅР°С‡РµРЅРёСЏ РѕС‚ 0-255 СЌС‚Рѕ РёРЅС‚РµРЅСЃРёРІРЅРѕСЃС‚СЊ РєР°Р¶РґРѕРіРѕ РёР· С†РІРµС‚РѕРІ
 	return color;
 
 }
-Color GameModel::TwoColor(Color a, Color b)//слияние 2 цветов
+Color GameModel::TwoColor(Color a, Color b)//СЃР»РёСЏРЅРёРµ 2 С†РІРµС‚РѕРІ
 {
 	int alph = (a.A + b.A) / 2;
 	int blue = (a.B + b.B ) / 2;
 	int red = (a.R + b.R ) / 2;
 	int green = (a.G + b.G ) / 2;
-	Color color = Color::FromArgb(alph, red, green, blue);//цвет образуется от трех параметров зеленый красныйй синий ,значения от 0-255 это интенсивность каждого из цветов
+	Color color = Color::FromArgb(alph, red, green, blue);//С†РІРµС‚ РѕР±СЂР°Р·СѓРµС‚СЃСЏ РѕС‚ С‚СЂРµС… РїР°СЂР°РјРµС‚СЂРѕРІ Р·РµР»РµРЅС‹Р№ РєСЂР°СЃРЅС‹Р№Р№ СЃРёРЅРёР№ ,Р·РЅР°С‡РµРЅРёСЏ РѕС‚ 0-255 СЌС‚Рѕ РёРЅС‚РµРЅСЃРёРІРЅРѕСЃС‚СЊ РєР°Р¶РґРѕРіРѕ РёР· С†РІРµС‚РѕРІ
 	return color;
 
 }
-Color GameModel::GetNextColor(int i, int j)//цвет на сдеж уровне
+Color GameModel::GetNextColor(int i, int j)//С†РІРµС‚ РЅР° СЃРґРµР¶ СѓСЂРѕРІРЅРµ
 {
 	int kolvocolor = 0;
 	array<Color, 1>^ mas;
-	int nc = GetAliveNeighbourCount(i, j);//кол во живых клеток
+	int nc = GetAliveNeighbourCount(i, j);//РєРѕР» РІРѕ Р¶РёРІС‹С… РєР»РµС‚РѕРє
 
 	if (Field[i, j] != dead && (nc == 2 || nc == 3))
 	{

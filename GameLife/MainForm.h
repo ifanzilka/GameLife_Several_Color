@@ -12,7 +12,7 @@ namespace WindowsForms {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MainForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MainForm
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
@@ -32,7 +32,7 @@ namespace WindowsForms {
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MainForm()
 		{
@@ -62,14 +62,14 @@ namespace WindowsForms {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -135,7 +135,7 @@ namespace WindowsForms {
 			this->groupBox1->Size = System::Drawing::Size(831, 124);
 			this->groupBox1->TabIndex = 1;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Управление";
+			this->groupBox1->Text = L"РЈРїСЂР°РІР»РµРЅРёРµ";
 			// 
 			// trackBar1
 			// 
@@ -154,7 +154,7 @@ namespace WindowsForms {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(69, 17);
 			this->label3->TabIndex = 10;
-			this->label3->Text = L"Скорость";
+			this->label3->Text = L"РЎРєРѕСЂРѕСЃС‚СЊ";
 			// 
 			// btnColor
 			// 
@@ -162,7 +162,7 @@ namespace WindowsForms {
 			this->btnColor->Name = L"btnColor";
 			this->btnColor->Size = System::Drawing::Size(129, 67);
 			this->btnColor->TabIndex = 9;
-			this->btnColor->Text = L"Выбрать цвет";
+			this->btnColor->Text = L"Р’С‹Р±СЂР°С‚СЊ С†РІРµС‚";
 			this->btnColor->UseVisualStyleBackColor = true;
 			this->btnColor->Click += gcnew System::EventHandler(this, &MainForm::btnColor_Click);
 			// 
@@ -173,7 +173,7 @@ namespace WindowsForms {
 			this->btnLoad->Name = L"btnLoad";
 			this->btnLoad->Size = System::Drawing::Size(181, 28);
 			this->btnLoad->TabIndex = 8;
-			this->btnLoad->Text = L"Загрузить...";
+			this->btnLoad->Text = L"Р—Р°РіСЂСѓР·РёС‚СЊ...";
 			this->btnLoad->UseVisualStyleBackColor = true;
 			this->btnLoad->Click += gcnew System::EventHandler(this, &MainForm::btnLoad_Click_1);
 			// 
@@ -184,7 +184,7 @@ namespace WindowsForms {
 			this->btnSave->Name = L"btnSave";
 			this->btnSave->Size = System::Drawing::Size(181, 28);
 			this->btnSave->TabIndex = 7;
-			this->btnSave->Text = L"Сохранить...";
+			this->btnSave->Text = L"РЎРѕС…СЂР°РЅРёС‚СЊ...";
 			this->btnSave->UseVisualStyleBackColor = true;
 			this->btnSave->Click += gcnew System::EventHandler(this, &MainForm::btnSave_Click_1);
 			// 
@@ -195,7 +195,7 @@ namespace WindowsForms {
 			this->btnNextStep->Name = L"btnNextStep";
 			this->btnNextStep->Size = System::Drawing::Size(141, 28);
 			this->btnNextStep->TabIndex = 6;
-			this->btnNextStep->Text = L"Следующий шаг";
+			this->btnNextStep->Text = L"РЎР»РµРґСѓСЋС‰РёР№ С€Р°Рі";
 			this->btnNextStep->UseVisualStyleBackColor = true;
 			this->btnNextStep->Click += gcnew System::EventHandler(this, &MainForm::btnNextStep_Click);
 			// 
@@ -207,7 +207,7 @@ namespace WindowsForms {
 			this->btnStop->Name = L"btnStop";
 			this->btnStop->Size = System::Drawing::Size(100, 28);
 			this->btnStop->TabIndex = 5;
-			this->btnStop->Text = L"Стоп";
+			this->btnStop->Text = L"РЎС‚РѕРї";
 			this->btnStop->UseVisualStyleBackColor = true;
 			this->btnStop->Click += gcnew System::EventHandler(this, &MainForm::btnStop_Click);
 			// 
@@ -218,7 +218,7 @@ namespace WindowsForms {
 			this->btnStart->Name = L"btnStart";
 			this->btnStart->Size = System::Drawing::Size(100, 28);
 			this->btnStart->TabIndex = 4;
-			this->btnStart->Text = L"Старт";
+			this->btnStart->Text = L"РЎС‚Р°СЂС‚";
 			this->btnStart->UseVisualStyleBackColor = true;
 			this->btnStart->Click += gcnew System::EventHandler(this, &MainForm::btnStart_Click);
 			// 
@@ -230,7 +230,7 @@ namespace WindowsForms {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(186, 17);
 			this->label2->TabIndex = 3;
-			this->label2->Text = L"Размер поля по вертикали";
+			this->label2->Text = L"Р Р°Р·РјРµСЂ РїРѕР»СЏ РїРѕ РІРµСЂС‚РёРєР°Р»Рё";
 			// 
 			// label1
 			// 
@@ -240,7 +240,7 @@ namespace WindowsForms {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(200, 17);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Размер поля по горизонтали";
+			this->label1->Text = L"Р Р°Р·РјРµСЂ РїРѕР»СЏ РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё";
 			// 
 			// numericUpDown2
 			// 
@@ -278,7 +278,7 @@ namespace WindowsForms {
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Игра \"Жизнь\"";
+			this->Text = L"РРіСЂР° \"Р–РёР·РЅСЊ\"";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &MainForm::MainForm_FormClosing);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
@@ -380,7 +380,7 @@ private: System::Void btnLoad_Click_1(System::Object^  sender, System::EventArgs
 				numR= Int32::Parse(fileText->Substring(k+3,3));
 				numG = Int32::Parse(fileText->Substring(k + 6, 3));
 				numB = Int32::Parse(fileText->Substring(k + 9, 3));
-				fld->Field[i,j]= Color::FromArgb(numA, numR, numG, numB);//цвет образуется от трех параметров зеленый красныйй синий ,значения от 0-255 это интенс
+				fld->Field[i,j]= Color::FromArgb(numA, numR, numG, numB);//С†РІРµС‚ РѕР±СЂР°Р·СѓРµС‚СЃСЏ РѕС‚ С‚СЂРµС… РїР°СЂР°РјРµС‚СЂРѕРІ Р·РµР»РµРЅС‹Р№ РєСЂР°СЃРЅС‹Р№Р№ СЃРёРЅРёР№ ,Р·РЅР°С‡РµРЅРёСЏ РѕС‚ 0-255 СЌС‚Рѕ РёРЅС‚РµРЅСЃ
 				
 				k = k + 12;
 			}
@@ -389,7 +389,7 @@ private: System::Void btnLoad_Click_1(System::Object^  sender, System::EventArgs
 		fld->Paint();
 	}
 	catch (...) {
-		MessageBox::Show("Не удалось считать");
+		MessageBox::Show("РќРµ СѓРґР°Р»РѕСЃСЊ СЃС‡РёС‚Р°С‚СЊ");
 	}
 }
 private: System::Void btnSave_Click_1(System::Object^  sender, System::EventArgs^  e) {
@@ -412,10 +412,10 @@ private: System::Void btnSave_Click_1(System::Object^  sender, System::EventArgs
 		}
 		
 		System::IO::File::WriteAllText(saveFileDialog1->FileName, mas);
-		MessageBox::Show("Файл сохранен");
+		MessageBox::Show("Р¤Р°Р№Р» СЃРѕС…СЂР°РЅРµРЅ");
 	}
 	catch (...) {
-		MessageBox::Show("Не удалось сохранить");
+		MessageBox::Show("РќРµ СѓРґР°Р»РѕСЃСЊ СЃРѕС…СЂР°РЅРёС‚СЊ");
 	}
 }
 private: System::Void numericUpDown1_ValueChanged(System::Object^  sender, System::EventArgs^  e) {
