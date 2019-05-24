@@ -5,7 +5,7 @@ using namespace System::Drawing;
 
 ref class GameField: public GameModel
 {
-	Object^ lock = gcnew Object();
+	Object^ lock = gcnew Object();//просто обект для потока
 	Graphics^ mainG;//Основной (видимый) холст
 	Graphics^ g; //Холст в памяти
 	BufferedGraphics^ bg;//буфер

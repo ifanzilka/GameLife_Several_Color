@@ -117,7 +117,7 @@ void GameField::StartLife()
 		Threading::ThreadStart^ ts = //поток 
 			gcnew Threading::ThreadStart(
 				this, 
-				&GameField::Start
+				&GameField::Start//метод выполняется в потоке
 			);
 		t = gcnew Threading::Thread(ts);
 		t->Start();
@@ -129,8 +129,8 @@ void GameField::StopLife()
 {
 	started = false;
 	try {
-		t->Abort();
-		t->Join();
+		t->Abort();//выкинуть из потока
+		t->Join();//прис
 	} catch (...)
 	{
 		
